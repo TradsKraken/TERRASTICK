@@ -101,4 +101,4 @@ The device successfully reading sensor data!
 ![Device Working](assets/Photo_of_Device_Working.jfif)
 
 ### 5. Video Demonstration
-🎥 [Click here to watch the LCD Working Demo video!](assets/Video_of_LCD_working.mp4)
+🎥 [Click here to watch the LCD Working Demo video](assets/Video_of_LCD_working.mp4)

@@ -77,3 +77,28 @@ If you notice your readings are slightly off (e.g., pH reads 6.5 in neutral 7.0 
 3. **Update the code:** Open `terrastick_sensors.ino` and find the `CALIBRATION OFFSETS` section at the top of the file.
 4. **Apply the offset:** Change `float CALIBRATE_PH = 0.0;` to `float CALIBRATE_PH = 0.3;`. 
 5. **Flash the updated code:** The ESP32 will automatically apply these offsets to all future readings (and automatically prevents impossible negative values like negative moisture).
+
+## Project Showcase
+
+### 1. Prototyping
+Here is the initial prototype built on a breadboard:
+![Prototype](assets/Protoype_of_the_device_in_breadboard.jfif)
+
+### 2. PCB Development
+Moving the prototype to a soldered perfboard:
+![Perfboard Development 1](assets/Developing_of_the_PCB_perfboard.jfif)
+![Perfboard Development 2](assets/Developing_of_the_PCB_perfboard1.jfif)
+
+### 3. Final Assembly
+The completed circuit board:
+![PCB Front](assets/Actual_Photo_PCB_Front.jfif)
+![PCB in Perfboard](assets/Actual_Photo_of_PCB_in_Perfboard.jfif)
+
+### 4. Working Device
+The device successfully reading sensor data!
+![Sensors in Soil](assets/Photo_of_sesors_in_soil.jfif)
+![Serial Monitor Readings](assets/Readings_in_Serial_Monitor.jfif)
+![Device Working](assets/Photo_of_Device_Working.jfif)
+
+### 5. Video Demonstration
+🎥 [Click here to watch the LCD Working Demo video!](assets/Video_of_LCD_working.mp4)

@@ -48,21 +48,39 @@ For reference, the physical build uses the following jumper wire colors:
 | **SDA** | **GPIO 21** |
 | **SCL** | **GPIO 22** |
 
-### 3. Sensors ➔ MAX485 & Power
+### 3. Soil 4-Parameter Sensor ➔ MAX485 & Power
 
-For reference, the physical build uses the following extension wire colors to connect the sensors to the main board:
-* **Soil 4-Parameter Sensor:** Green (GND), Yellow (A), Blue (B), Orange (VCC / 12V)
-* **NPK Sensor:** Black (GND), White (A), Violet (B), (4th wire for VCC / 12V)
+For reference, the physical build uses the following extension wire colors to connect this sensor to the main board:
+* **Green:** GND
+* **Yellow:** A
+* **Blue:** B
+* **Orange:** VCC (12V)
 
 ![4-Parameter Sensor Wiring](assets/Actual_Wiring_of_Soil_4_Parameters_sensor_to_Perfboard.jfif)
+
+| Sensor Wire | Connection |
+| :--- | :--- |
+| **Yellow (A)** | MAX485 `A` Terminal |
+| **Blue (B)** | MAX485 `B` Terminal |
+| **Orange (VCC)** | 12V Power Supply (+) |
+| **Green (GND)** | 12V Power Supply (-) **AND ESP32 GND** |
+
+### 4. NPK Sensor ➔ MAX485 & Power
+
+For reference, the physical build uses the following extension wire colors to connect this sensor to the main board:
+* **Black:** GND
+* **White:** A
+* **Violet:** B
+* **(4th wire):** VCC (12V)
+
 ![NPK Sensor Wiring](assets/Actual_Wiring_of_NPK_sensor_to_Perfboard.jfif)
 
 | Sensor Wire | Connection |
 | :--- | :--- |
-| **A (Yellow/Green)** | MAX485 `A` Terminal |
-| **B (Blue)** | MAX485 `B` Terminal |
-| **VCC (Brown/Red)** | 12V Power Supply (+) |
-| **GND (Black)** | 12V Power Supply (-) **AND ESP32 GND** |
+| **White (A)** | MAX485 `A` Terminal |
+| **Violet (B)** | MAX485 `B` Terminal |
+| **VCC Wire** | 12V Power Supply (+) |
+| **Black (GND)** | 12V Power Supply (-) **AND ESP32 GND** |
 
 > **⚠️ CRITICAL: COMMON GROUND**
 > The 12V Power Supply Negative (-) MUST be tied to the ESP32 GND, otherwise RS485 communication will fail.

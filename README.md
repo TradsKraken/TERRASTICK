@@ -100,5 +100,9 @@ The device successfully reading sensor data!
 ![Serial Monitor Readings](assets/Readings_in_Serial_Monitor.jfif)
 ![Device Working](assets/Photo_of_Device_Working.jfif)
 
-### 5. Video Demonstration
-🎥 [Click here to watch the LCD Working Demo video](assets/Video_of_LCD_working.mp4)
+### 5. LCD Interface Flow
+The sequence of the LCD screens during startup and operation:
+![LCD Boot Screen](assets/LCD_Starting_of_Terrastick.png)
+![LCD Checking Sensors](assets/LCD_CHecking_SEnsor.png)
+![LCD System Ready](assets/LCD_All_sensor_working.png)
+![LCD Live Readings](assets/LCD_Readings_of_sensors.png)

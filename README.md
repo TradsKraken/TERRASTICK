@@ -32,6 +32,15 @@ TERRASTICK is an ESP32-based portable soil analysis device that provides quantit
 | **DE & RE** | **GPIO 4** | Jumper DE and RE together. Switches module between Transmit/Receive. |
 
 ### 2. LCD Display ➔ ESP32
+
+For reference, the physical build uses the following jumper wire colors:
+* **Yellow:** SCL
+* **Orange:** SDA
+* **Red:** VCC (5V)
+* **Brown:** GND
+
+![LCD Wiring](assets/Actual_Wiring_of_LCD_to_Perfboard.jfif)
+
 | LCD Pin | ESP32 Pin |
 | :--- | :--- |
 | **VCC** | **5V (VIN)** |
@@ -40,6 +49,14 @@ TERRASTICK is an ESP32-based portable soil analysis device that provides quantit
 | **SCL** | **GPIO 22** |
 
 ### 3. Sensors ➔ MAX485 & Power
+
+For reference, the physical build uses the following extension wire colors to connect the sensors to the main board:
+* **Soil 4-Parameter Sensor:** Green (GND), Yellow (A), Blue (B), Orange (VCC / 12V)
+* **NPK Sensor:** Black (GND), White (A), Violet (B), (4th wire for VCC / 12V)
+
+![4-Parameter Sensor Wiring](assets/Actual_Wiring_of_Soil_4_Parameters_sensor_to_Perfboard.jfif)
+![NPK Sensor Wiring](assets/Actual_Wiring_of_NPK_sensor_to_Perfboard.jfif)
+
 | Sensor Wire | Connection |
 | :--- | :--- |
 | **A (Yellow/Green)** | MAX485 `A` Terminal |
